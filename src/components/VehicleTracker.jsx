@@ -5,30 +5,35 @@ const VehicleTracker = () => {
   // Dummy route data
   const routeData = [
     { latitude: 17.385044, longitude: 78.486671, timestamp: "2024-07-20T10:00:00Z" },
-    { latitude: 17.385144, longitude: 78.486771, timestamp: "2024-07-20T10:00:05Z" },
-    { latitude: 17.385244, longitude: 78.486871, timestamp: "2024-07-20T10:00:10Z" },
-    { latitude: 17.385344, longitude: 78.486971, timestamp: "2024-07-20T10:00:15Z" },
-    { latitude: 17.385444, longitude: 78.487071, timestamp: "2024-07-20T10:00:20Z" },
-    { latitude: 17.385544, longitude: 78.487171, timestamp: "2024-07-20T10:00:25Z" },
-    { latitude: 17.385644, longitude: 78.487271, timestamp: "2024-07-20T10:00:30Z" },
-    { latitude: 17.385744, longitude: 78.487371, timestamp: "2024-07-20T10:00:35Z" },
-    { latitude: 17.385844, longitude: 78.487471, timestamp: "2024-07-20T10:00:40Z" },
-    { latitude: 17.385944, longitude: 78.487571, timestamp: "2024-07-20T10:00:45Z" },
-    { latitude: 17.386044, longitude: 78.487671, timestamp: "2024-07-20T10:00:50Z" },
-    { latitude: 17.386144, longitude: 78.487771, timestamp: "2024-07-20T10:00:55Z" },
-    { latitude: 17.386244, longitude: 78.487871, timestamp: "2024-07-20T10:01:00Z" },
-    { latitude: 17.386344, longitude: 78.487971, timestamp: "2024-07-20T10:01:05Z" },
-    { latitude: 17.386444, longitude: 78.488071, timestamp: "2024-07-20T10:01:10Z" },
-    { latitude: 17.386544, longitude: 78.488171, timestamp: "2024-07-20T10:01:15Z" },
-    { latitude: 17.386644, longitude: 78.488271, timestamp: "2024-07-20T10:01:20Z" },
-    { latitude: 17.386744, longitude: 78.488371, timestamp: "2024-07-20T10:01:25Z" },
-    { latitude: 17.386844, longitude: 78.488471, timestamp: "2024-07-20T10:01:30Z" },
-    { latitude: 17.386944, longitude: 78.488571, timestamp: "2024-07-20T10:01:35Z" },
-    { latitude: 17.387044, longitude: 78.488671, timestamp: "2024-07-20T10:01:40Z" },
-    { latitude: 17.387144, longitude: 78.488771, timestamp: "2024-07-20T10:01:45Z" },
-    { latitude: 17.387244, longitude: 78.488871, timestamp: "2024-07-20T10:01:50Z" },
-    { latitude: 17.387344, longitude: 78.488971, timestamp: "2024-07-20T10:01:55Z" },
-    { latitude: 17.387444, longitude: 78.489071, timestamp: "2024-07-20T10:02:00Z" }
+    { latitude: 17.386044, longitude: 78.487671, timestamp: "2024-07-20T10:00:05Z" },
+    { latitude: 17.387044, longitude: 78.488671, timestamp: "2024-07-20T10:00:10Z" },
+    { latitude: 17.388044, longitude: 78.489671, timestamp: "2024-07-20T10:00:15Z" },
+    { latitude: 17.389044, longitude: 78.490671, timestamp: "2024-07-20T10:00:20Z" },
+    { latitude: 17.390044, longitude: 78.491671, timestamp: "2024-07-20T10:00:25Z" },
+    { latitude: 17.391044, longitude: 78.492671, timestamp: "2024-07-20T10:00:30Z" },
+    { latitude: 17.392044, longitude: 78.493671, timestamp: "2024-07-20T10:00:35Z" },
+    { latitude: 17.393044, longitude: 78.494671, timestamp: "2024-07-20T10:00:40Z" },
+    { latitude: 17.394044, longitude: 78.495671, timestamp: "2024-07-20T10:00:45Z" },
+    { latitude: 17.395044, longitude: 78.496671, timestamp: "2024-07-20T10:00:50Z" },
+    { latitude: 17.396044, longitude: 78.497671, timestamp: "2024-07-20T10:00:55Z" },
+    { latitude: 17.397044, longitude: 78.498671, timestamp: "2024-07-20T10:01:00Z" },
+    { latitude: 17.398044, longitude: 78.499671, timestamp: "2024-07-20T10:01:05Z" },
+    { latitude: 17.399044, longitude: 78.500671, timestamp: "2024-07-20T10:01:10Z" },
+    { latitude: 17.400044, longitude: 78.501671, timestamp: "2024-07-20T10:01:15Z" },
+    { latitude: 17.401044, longitude: 78.502671, timestamp: "2024-07-20T10:01:20Z" },
+    { latitude: 17.402044, longitude: 78.503671, timestamp: "2024-07-20T10:01:25Z" },
+    { latitude: 17.403044, longitude: 78.504671, timestamp: "2024-07-20T10:01:30Z" },
+    { latitude: 17.404044, longitude: 78.505671, timestamp: "2024-07-20T10:01:35Z" },
+    { latitude: 17.405044, longitude: 78.506671, timestamp: "2024-07-20T10:01:40Z" },
+    { latitude: 17.406044, longitude: 78.507671, timestamp: "2024-07-20T10:01:45Z" },
+    { latitude: 17.407044, longitude: 78.508671, timestamp: "2024-07-20T10:01:50Z" },
+    { latitude: 17.408044, longitude: 78.509671, timestamp: "2024-07-20T10:01:55Z" },
+    { latitude: 17.409044, longitude: 78.510671, timestamp: "2024-07-20T10:02:00Z" },
+    { latitude: 17.410044, longitude: 78.511671, timestamp: "2024-07-20T10:02:05Z" },
+    { latitude: 17.411044, longitude: 78.512671, timestamp: "2024-07-20T10:02:10Z" },
+    { latitude: 17.412044, longitude: 78.513671, timestamp: "2024-07-20T10:02:15Z" },
+    { latitude: 17.413044, longitude: 78.514671, timestamp: "2024-07-20T10:02:20Z" },
+    { latitude: 17.414044, longitude: 78.515671, timestamp: "2024-07-20T10:02:25Z" }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -213,7 +218,7 @@ const VehicleTracker = () => {
       <div ref={mapRef} className="absolute inset-0 w-full h-full z-0"></div>
 
       {/* Control Panel */}
-      < className="absolute top-4 right-4 left-4 md:left-auto md:w-96 bg-white rounded-xl shadow-2xl z-10 p-4 md:p-6">
+      <div className="absolute top-4 right-4 left-4 md:left-auto md:w-96 bg-white rounded-xl shadow-2xl z-10 p-4 md:p-6">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-200">
           <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-2">
@@ -307,4 +312,31 @@ const VehicleTracker = () => {
               <div>
                 <span className="text-blue-700 font-medium">Lng:</span>
                 <p className="font-mono font-bold text-blue-900">{currentPoint.longitude.toFixed(6)}</p>
-              
+              </div>
+            </div>
+          </div>
+
+          {/* Timestamp */}
+          <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-3">
+            <div className="flex items-center gap-2 mb-1">
+              <Clock className="w-4 h-4 text-purple-600" />
+              <span className="text-xs font-semibold text-purple-900">Current Time</span>
+            </div>
+            <p className="font-mono font-bold text-purple-900 text-sm">{currentTime}</p>
+          </div>
+
+          {/* Speed */}
+          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-3">
+            <div className="flex items-center gap-2 mb-1">
+              <Gauge className="w-4 h-4 text-green-600" />
+              <span className="text-xs font-semibold text-green-900">Vehicle Speed</span>
+            </div>
+            <p className="font-mono font-bold text-green-900 text-lg">{currentSpeed} <span className="text-sm">km/h</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default VehicleTracker;
