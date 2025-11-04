@@ -213,7 +213,7 @@ const VehicleTracker = () => {
       <div ref={mapRef} className="absolute inset-0 w-full h-full z-0"></div>
 
       {/* Control Panel */}
-      < className="absolute top-4 right-4 left-4 md:left-auto md:w-96 bg-white rounded-xl shadow-2xl z-10 p-4 md:p-6">
+      <div className="absolute top-4 right-4 left-4 md:left-auto md:w-96 bg-white rounded-xl shadow-2xl z-10 p-4 md:p-6">
         {/* Header */}
         <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-200">
           <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-2">
@@ -307,4 +307,31 @@ const VehicleTracker = () => {
               <div>
                 <span className="text-blue-700 font-medium">Lng:</span>
                 <p className="font-mono font-bold text-blue-900">{currentPoint.longitude.toFixed(6)}</p>
-              
+              </div>
+            </div>
+          </div>
+
+          {/* Timestamp */}
+          <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-3">
+            <div className="flex items-center gap-2 mb-1">
+              <Clock className="w-4 h-4 text-purple-600" />
+              <span className="text-xs font-semibold text-purple-900">Current Time</span>
+            </div>
+            <p className="font-mono font-bold text-purple-900 text-sm">{currentTime}</p>
+          </div>
+
+          {/* Speed */}
+          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-3">
+            <div className="flex items-center gap-2 mb-1">
+              <Gauge className="w-4 h-4 text-green-600" />
+              <span className="text-xs font-semibold text-green-900">Vehicle Speed</span>
+            </div>
+            <p className="font-mono font-bold text-green-900 text-lg">{currentSpeed} <span className="text-sm">km/h</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default VehicleTracker;
